@@ -6,21 +6,21 @@
 
 ## 需求及评分细则
 
-**总分: 130**
+**总分: 150**
 未标注的需求需组内完成，禁止询问其他组。
 
 ### 必做
 
-**总分: 15**
+**总分: 35**
 如果没有完成必做需求，没有资格参加答辩。
 
-#### 1. 运行 [rm_description](https://github.com/gdut-dynamic-x/rm_description/tree/assignment)的 assignment 分支
+#### 1. 运行 [rm_description](https://github.com/YoujianWu/rm_description_for_task.git) 的英雄机器人模型
 
 **分数: 5**
 
 参考资料：
 
-- [rm_description](https://github.com/gdut-dynamic-x/rm_description/tree/assignment)
+- [rm_description](https://github.com/YoujianWu/rm_description_for_task.git)
 
 #### 2. 学习理解并运行 [simple_chassis_controller]
 
@@ -43,6 +43,15 @@
 - [ros_control: wiki](https://github.com/ros-controls/ros_control/wiki)
 - [Gazbeo: Tutorial: ROS Control](http://gazebosim.org/tutorials/?tut=ros_control)
 - [pluginlib](http://wiki.ros.org/pluginlib)
+
+#### 3. 谈谈你对 ros_control 的理解
+
+**分数: 20**
+
+参考资料：
+
+- [ros_control: A generic and simple control framework for ROS](http://www.theoj.org/joss-papers/joss.00456/10.21105.joss.00456.pdf)
+- [ros_control: wiki](https://github.com/ros-controls/ros_control/wiki)
 
 ### 选做
 
