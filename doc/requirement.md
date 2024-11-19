@@ -22,7 +22,7 @@
 
 - [rm_description](https://github.com/YoujianWu/rm_description_for_task.git)
 
-#### 2. 学习理解并运行 [simple_chassis_controller]
+#### 2. 学习理解并运行 [simple_chassis_controller](https://github.com/YoujianWu/simple_chassis_controller)
 
 **分数: 10**
 
@@ -90,6 +90,8 @@
 要求：
 
 1. 使用 ROS C++ Style Guide 或者 Google C++ Style.
+2. 将本项目的 .clang-format 与 .clang-tidy
+   文件添加到你的项目中，并使用 [Save Actions](https://plugins.jetbrains.com/plugin/7642-save-actions) 来优化代码格式
 
 参考资料：
 
@@ -105,14 +107,14 @@
 1. 一个PID对应控制一个轮子（共四个PID）
 2. 使用 control_toolbox 的 PID 控制器
 3. 可在配置文件中设定 PID 的各个参数
-4. 会使用 rqt 的 rqt_plot 和 rqt_reconfigure 调整得到合适的PID参数
+4. 会使用 plotjuggler 和 rqt 的 rqt_reconfigure 调整得到合适的PID参数
 5. 理解 `control_toolbox::Pid` 类 参考资料：
 
 - [control_toolbox](http://wiki.ros.org/control_toolbox)
 - [control_toolbox::Pid Class Reference](http://docs.ros.org/en/jade/api/control_toolbox/html/classcontrol__toolbox_1_1Pid.html)
 - [effort_controllers/joint_velocity_controller.cpp](https://github.com/ros-controls/ros_controllers/blob/noetic-devel/effort_controllers/src/joint_velocity_controller.cpp)
   展示了如何用 `control_toolbox::Pid` 控制单个关节的速度
-- [rqt_plot](http://wiki.ros.org/rqt_plot)
+- [plotjuggler](https://www.ros.org/news/2017/01/new-package-plotjuggler.html)
 - [rqt_reconfigure](http://wiki.ros.org/rqt_reconfigure)
 
 #### 5. 使用逆运动学计算各个轮子的期望速度
@@ -172,11 +174,13 @@
 
 1. 自由发挥
 2. 如 使用 teleop_twist_keyboard 键盘操控底盘
-3. 如 可在配置文件设定 底盘加速度
+3. 如 可在配置文件设定底盘加速度。
+4. 如 可在配置文件设定底盘的运动功率，编写功率约束算法，并保证运动时不超出预期功率。
 
 参考资料：
 
 - [teleop_twist_keyboard](http://wiki.ros.org/teleop_twist_keyboard)
+- [power_limit](https://hz-rm-bbs-web-prod.oss-cn-hangzhou.aliyuncs.com/attachment/pre/v1/202309/15/000721u4euqvq7vsijvgpk.attach/%E5%B9%BF%E4%B8%9C%E5%B7%A5%E4%B8%9A%E5%A4%A7%E5%AD%A6%E4%B8%8B%E4%BE%9B%E5%BC%B9%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88.pdf)
 
 [rm_description]: https://github.com/gdut-dynamic-x/rm_description
 
